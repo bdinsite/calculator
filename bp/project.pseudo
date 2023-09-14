@@ -1,0 +1,38 @@
+// Grab buttons and screen rows
+const numX = grab button X;
+const screenLineX = grab screen line X;
+
+// Reset calculator
+run reset function();
+reset variable values;
+add default values to calculator screen;
+
+// Add event listeners to all buttons
+numX.eventListener('when clicked' run defined function);
+
+// Record user input values and operator and store in variables
+let numArr = add values to array as long as user clicks on numbers;
+if(user clicks on operator){convert numArr to number and store value in variable1};
+display input on first row of screen;
+let operator = user input(operator button);
+clear numArr;
+add clicked number values to numArr until user clicks "equal";
+if(user clicks "equal"){convert numArr to number and store value in variable2};
+
+
+// Calculate value for user input and store value
+let subTotal;
+
+function calculateSubtotal(var1, var2){
+    if operator == "+" then subTotal = var1 + var2;
+    else if operator == "-" then subTotal = var1 - var2;
+    else if operator == "/" then subTotal = var1 / var2;
+    else then subTotal = var1 * var2;
+    
+    copy subTotal value to var1;
+    reset variable: operator = "";
+    reset variable: var2 = 0;
+    reset variable: subTotal = 0;
+    display var1 value on screen Total -row.
+
+}
