@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Codystar&family=Kanit&family=Wallpoet&display=swap');
+
+/* font-family: 'ADLaM Display', cursive;
+font-family: 'Codystar', cursive;
+font-family: 'Kanit', sans-serif;
+font-family: 'Wallpoet', cursive; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Kanit;
+}
+
+h1 {
+    margin: 30px 65px 0 0;
+    rotate: 90deg;
+    color: orange;
+}
+
+p {
+    font-family: 'Wallpoet', cursive;
+    /* font-family: 'Codystar', cursive; */
+    /* font-weight: bold; */
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+body {
+    height: 800px;
+    margin: 50px 0;
+}
+
+main {
+    margin: 0 20px;
+}
+
+.total {
+    font-size: 25px;
+}
+
+body,
+header,
+header .container,
+.left,
+.calculator,
+.mainScreen,
+.buttons,
+.row,
+.reset,
+.delete,
+.special,
+.num,
+.operator,
+.equal {
+    display: flex;
+}
+
+header {
+    width: 150px;
+    flex-direction: column;
+}
+
+header .container {
+    flex-direction: column;
+    flex: 1;
+
+}
+
+.left {
+    width: 100%;
+    flex-direction: column;
+    gap: 150px;
+    margin: auto 0;
+    /* flex: 1; */
+    align-items: center;
+    justify-content: start;
+
+}
+
+.left img {
+    height: 45%;
+    rotate: 90deg;
+}
+
+.calculator {
+    margin: 0 auto;
+    width: 300px;
+    height: 500px;
+    flex-direction: column;
+    background-image: url('../img/black.jpg');
+}
+
+.calculator,
+.mainScreen,
+.buttons,
+.reset,
+.delete,
+.special,
+.num,
+.operator,
+.equal {
+    border: 1px solid rgb(113, 117, 122);
+    border-radius: 4px;
+}
+
+.mainScreen {
+    margin: 20px 10px 10px 10px;
+    padding: 10px 0 5px 0;
+    height: 120px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    /* background-color: aliceblue; */
+    color: black;
+    background-image: url('../img/screen.png');
+
+}
+
+.buttons {
+    flex-direction: column;
+    margin: 10px;
+    
+}
+
+.row {
+    justify-content: space-between;
+}
+
+.reset,
+.delete,
+.special,
+.num,
+.operator,
+.equal {
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+.reset {
+    background-color: red;
+    color: #fff;
+}
+
+.delete {
+    background-color: orange;
+    color: #fff;
+}
+
+.equal {
+    background-color: rgb(114, 114, 114);
+    color: #fff;
+}
+
+.num {
+    background-color: rgb(207, 207, 207);
+    color: #fff;
+}
+
+.operator {
+    background-color: rgb(177, 162, 162);
+    color: #fff;
+}
+
+.special {
+    background-color: rgb(222, 209, 184);
+    color: #fff;
+}
+
+.reset:hover,
+.delete:hover,
+.special:hover,
+.num:hover,
+.operator:hover,
+.equal:hover {
+    cursor: pointer;
+}
